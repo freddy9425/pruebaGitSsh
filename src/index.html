@@ -1,13 +1,178 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>PruebaGit</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+<!DOCTYPE html>
+
+<!-- Así se hace un comentario en html-->
+
+<!--indica la versión 5 de HTML es el lenguaje español-->
+<html lang="es">
+  <!--cabeza -->
+  <head>
+
+    <!-- codificación de caracteres-->
+    <meta charset="utf-8"/>
+
+    <title>Web edgar allan poe</title>
+
+    <!-- Etiqueta que dan información descriptiva sobre la página -->
+    <meta name="description" content="mi primer prueba para HTML"/>
+    <!--  autor de la página-->
+    <meta name="author" content="freddy9425"/>
+    <!-- palabras clave -->
+    <meta name="keywords" content="Palabras clave, mi primer página web"/>
+    <!-- Enlace con hoja de estilos, primer atributo indica el tipo de hoja, en este caso stylesheet es decir css; el segundo atributo indica
+     la referencia a la hoja de estilos-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- En la etiqueta head se agrega la etiqueta Syle para indicarle las reglas de css que queremos que afecte a toda la página,
+    para ello se indica el nombre de cada tipo de elemento y sus atributos se indicando entre llaves y cada atributo se separa con ;
+    * para seleccionar un solo elemento ya identificado con la etiqueta ID se escribe antes el caracter numeral-->
+
+  </head>
+
+  <!-- cuerpo -->
+  <body>
+    <!-- División para el contenido con identificador de clase agrupar-->
+    <div class="agrupar">
+
+      <!-- etiqueta para indicar encabezado, el atributo style puede tener varios parámetros aplicables, todos los atributos van entre el mismo par de comillas
+    y separados por un ; además luego de indicar el atributo se le indica colores con :
+    <header style="background: black; color: white">-->
+      <header class="header">
+        <h1>Blog Edgar Allan Poe</h1>
+      </header>
+
+      <!-- Mi navegación tiene la siguiente lista-->
+      <nav class="menu">
+
+        <!-- Listas desordenadas -->
+        <ul>
+
+          <!-- Items de la lista -->
+          <li>Principal</li>
+          <li>Ayuda</li>
+          <li>Contacto</li>
+
+        </ul>
+
+      </nav>
+
+      <!-- Aquí dentro se agrega contenido de la sección-->
+      <section class="Sprincipal">
+
+        <!-- sirve para agregar un artículo dentro-->
+        <article>
+
+          <!-- por sí misma la etiqueta time sirve para indicar fechas, pero con el atributo datetime le damos más info al navegador -->
+          <time datetime="8/1/2022"> publicado el lunes 8/1/2022 </time>
+
+          <!-- etiqueta para determinar jerarquía de los titulos -->
+          <hgroup>
+
+            <h2>El corazón delator</h2>
+            <h1>Por Edgar Allan Poe</h1>
+
+          </hgroup>
+
+
+
+          <!-- etiqueta para agregar imagenes, se debe referenciar la ubicación dentro de la raíz del proyecto-->
+          <img src="images/Edgar.jpg">
+
+          <!-- parrafo -->
+          <p>
+            ¡Es cierto! Siempre he sido nervioso, muy nervioso, terriblemente nervioso. ¿Pero por qué afirman ustedes que estoy loco? La enfermedad había agudizado mis sentidos,
+            en vez de destruirlos o embotarlos. Y mi oído era el más agudo de todos. Oía todo lo que puede oírse en la tierra y en el cielo. Muchas cosas oí en el infierno.
+            ¿Cómo puedo estar loco, entonces? Escuchen… y observen con cuánta cordura, con cuánta tranquilidad les cuento mi historia.
+            Me es imposible decir cómo aquella idea me entró en la cabeza por primera vez; pero, una vez concebida, me acosó noche y día. Yo no perseguía ningún propósito.
+            Ni tampoco estaba colérico. Quería mucho al viejo. Jamás me había hecho nada malo. Jamás me insultó. Su dinero no me interesaba. Me parece que fue su ojo.
+            ¡Sí, eso fue! Tenía un ojo semejante al de un buitre… Un ojo celeste, y velado por una tela. Cada vez que lo clavaba en mí se me helaba la sangre. Y así, poco a poco,
+            muy gradualmente, me fui decidiendo a matar al viejo y librarme de aquel ojo para siempre.
+
+            <br> <!-- este es un salto de linea --><br>
+            El siguiente texto se hace más pequeño <small> Texto más pequeño </small><br>
+            El siguiente texto es de tipo cita <cite> esta es una cita </cite><br>
+            El siguiente texto es para ser alterado en css> <span>Texto modificable por CSS</span><br>
+          </p>
+
+          <!-- etiqueta para indicar al navegador que se manejará una dirección de internet -->
+          <adress>
+
+            <!-- etiqueta para crear un hipervímculo -->
+            <a href="https://www.biografiasyvidas.com/biografia/p/poe.htm"> Biografía del autor </a>
+
+          </adress>
+
+          <footer>
+            <p>Comentarios (832)</p>
+          </footer>
+
+        </article>
+
+        <article>
+
+          <time datetime="8/1/2022"> publicado el lunes 8/1/2022 </time>
+
+          <hgroup>
+            <h2>El Cuervo</h2>
+            <h1>Por Edgar Allan Poe</h1>
+          </hgroup>
+
+          <p>
+            Una vez, al filo de una lúgubre media noche,
+            mientras débil y cansado, en tristes reflexiones embebido,
+            inclinado sobre un viejo y raro libro de olvidada ciencia,
+            cabeceando, casi dormido,
+            oyóse de súbito un leve golpe,
+            como si suavemente tocaran,
+            tocaran a la puerta de mi cuarto.
+            “Es —dije musitando— un visitante
+            tocando quedo a la puerta de mi cuarto.
+            Eso es todo, y nada más.”
+
+            ¡Ah! aquel lúcido recuerdo
+            de un gélido diciembre;
+            espectros de brasas moribundas
+            reflejadas en el suelo;
+            angustia del deseo del nuevo día;
+            en vano encareciendo a mis libros
+            dieran tregua a mi dolor.
+            Dolor por la pérdida de Leonora, la única,
+            virgen radiante, Leonora por los ángeles llamada.
+            Aquí ya sin nombre, para siempre.
+          </p>
+
+          <footer>
+            <p>Comentarios (1258)</p>
+          </footer>
+
+        </article>
+
+      </section>
+
+      <!-- la etiqueta aside sirve para agregar contenido relacionado de menor importancia o jerarquía dentro de la página -->
+      <aside class="column">
+
+        <!-- etiqueta para agregar citas bibliográficas  -->
+        <blockquote cite="https://www.todostuslibros.com">
+
+          El gato negro
+
+        </blockquote>
+
+        <blockquote cite="https://www.actualidadpanamericana.com.co">
+
+          El escarabajo de oro
+
+        </blockquote>
+
+      </aside>
+
+      <!-- pie de página -->
+      <footer class="foot">
+        Derechos reservados 2010-2024
+      </footer>
+    </div>
+  </body>
+
 </html>
+
+

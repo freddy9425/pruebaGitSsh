@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Se elminan margenes y espaciados */
+*{
+  padding: 0;
+  margin: 0;
+}
+/* Afectar titulos h1 */
+h1 {
+  /* tamaño de la letra en pixeles */
+  font-size: 15px;
+  /* tipo de fuente*/
+  font-family: Papyrus;
+  /* peso o grosor de fuente*/
+  font-weight: bold;
+  text-align: center;
+}
+/* Afectar titulos h2 */
+h2{
+  /* asignar reglas de estilo en una sola linea */
+  font: bold 34px Papyrus;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Seleccionar varios elementos de una sola vez */
+header,section,footer,aside,nav,article,hgroup {
+  /* Agregar borde a los elementos seleccionados con tamaño, tipo y color */
+  /*border: 1px solid black;*/
+  display: block;
+}
+/* Estilo para el cuerpo */
+body{
+  /* Alinear texto */
+  text-align: center;
+  background: #212121;
+}
+/* Estilo para la división */
+.agrupar{
+  /* Ancho del grupo */
+  width: 1080px;
+  /*
+    Margen centrada
+    margin: auto;
+    margen arriba
+    margin-top: 200px ;
+    margen abajo
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    Margen centrado automaticamente primer parámetro eje y, segundo eje x
+   */
+  margin: 15px auto;
+  /* Espaciado interno del grupo*/
+  padding: 100px;
+
+  background: #212121;
+  color: #d2dae2;
+
+}
+/* Titulo*/
+.header{
+  background: #303030;
+  border: 1px solid #d2dae2;
+  padding: 20px;
+}
+
+.menu{
+  background: #303030;
+  border: 1px solid #d2dae2;
+  /*Primer parámetro y, segundo en x*/
+  padding: 5px 20px;
+}
+
+/*estilo de los li dentro de menu*/
+.menu li{
+  /*Quitar iconos que separan cada elemento li*/
+  list-style: none;
+  padding: 5px 40px;
+  font: bold 20px Papyrus;
+  /*Bloques en linea  (uno al lado del otro)*/
+  display: inline-block;
+}
+/*sección principal*/
+.Sprincipal{
+  width: 70%;
+  margin: 40px;
+  /*Hacer que el contenido flote*/
+  float: left;
+}
+
+/*Todos los articulos*/
+article {
+  border: 1px solid #424242;
+  padding: 30px;
+  margin-bottom: 100px;
+}
+/*pie de páginas dentro de los articulos*/
+
+article footer{
+  text-align: right;
+}
+article time{
+  color: #999999;
+  margin-left: 500px;
+
+}
+article p{
+  margin-top: 40px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+/*Columna de información a la derecha*/
+.column{
+  width: 21%;
+  margin: 40px 0px;
+  float: left;
+}
+.column blockquote{
+  padding: 20px;
+  text-align: left;
+  border: 1px dashed #999999;
+  margin-bottom: 20px;
+}
+
+img{
+
+  display: block;
+  margin:20px auto;
+}
+
+/*pie de página*/
+.foot{
+  /*Se le indica que el contenido anterior al pie de pagina no flote fuera de la sección*/
+  clear: both;
+  padding: 20px;
+  color: #999999;
+  background: #424242;
+}
+
+
+
