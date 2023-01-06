@@ -49,6 +49,16 @@ for (let i=0;i<names.length;i++){
   document.write("<br>"+ names[i]);
 }
 
+//funciones
 
+function write (text) {
+  document.writeln("<br>"+ text);
+}
+write("Prueba función");
 
+function sum (n1,n2){
+  document.write('<br>'+ (n1+n2));
+}
+
+sum(5,2);
 
